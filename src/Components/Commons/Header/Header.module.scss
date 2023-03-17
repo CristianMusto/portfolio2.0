@@ -1,0 +1,114 @@
+.header {
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    background: linear-gradient(0deg, rgba( 0, 0, 0, 1 ) 10%, rgba( 0, 0, 0, 0 ));
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+
+    .headerMenu {
+        width: 100%;
+        height: 100%;
+        .listMenu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            a {
+                color: #ffffff;
+
+                &.active h3 {
+                    animation: neonAnim 2s alternate-reverse infinite;
+                    color: #F5F8FB;
+
+                    @keyframes neonAnim {
+                        from {
+                            text-shadow:
+                              0 0 20px rgba(245, 248, 251, .7),
+                              0 0 50px rgba(245, 248, 251, .7),
+                              0 0 110px rgba(245, 248, 251, .7);
+                          }
+                          to {
+                            text-shadow:
+                              0 0 15px rgba(245, 248, 251, .7),
+                              0 0 30px rgba(245, 248, 251, .7),
+                              0 0 70px rgba(245, 248, 251, .7);
+                          }
+                    }
+                }
+
+                .logo {
+                    position: absolute;
+                    left: 50%;
+                    width: 25%;
+                    top: 30%;
+                    text-align: center;
+                    transform: translate(-50%, -50%);
+                    font-family: 'Pacifico', cursive;
+
+                    @keyframes noise-anim {
+                        $steps: 20;
+
+                        @for $i from 0 through $steps {
+                            #{percentage($i*calc(1/$steps))} {
+                                clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+                            }
+                        }
+                    }
+
+                    &:after {
+                        content: attr(data-text);
+                        text-align: center;
+                        width: 25%;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        text-shadow: -2px 0 #ffffff;
+                        top: 0;
+                        color: #ffffff;
+                        overflow: hidden;
+                        clip: rect(0, 900px, 0, 0);
+                        animation: noise-anim 2s infinite linear alternate-reverse;
+                    }
+
+                    @keyframes noise-anim-2 {
+                        $steps: 20;
+
+                        @for $i from 0 through $steps {
+                            #{percentage($i*calc(1/$steps))} {
+                                clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+                            }
+                        }
+                    }
+
+                    &:before {
+                        content: attr(data-text);
+                        text-align: center;
+                        width: 25%;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        text-shadow: 2px 0 #ffffff;
+                        top: 0;
+                        color: #ffffff;
+                        overflow: hidden;
+                        clip: rect(0, 900px, 0, 0);
+                        animation: noise-anim-2 3s infinite linear alternate-reverse;
+                    }
+                }
+            }
+
+            @media (max-width: 800px) {
+                margin-top: 20px;
+            }
+
+            .menuItem {
+                pointer-events: auto;
+                color: #ffffff
+            }
+        }
+    }
+}

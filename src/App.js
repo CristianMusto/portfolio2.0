@@ -1,12 +1,27 @@
-import './App.scss';
 import Planet from './Components/UI/Planet/Planet';
-import Stars from './Components/UI/Stars/Stars';
+import Cursor from './Components/UI/Cursor/Cursor';
+import Header from './Components/Commons/Header/Header';
+import './App.scss';
+import { useState } from 'react';
+
 
 function App() {
+
+  const [isActive, setIsActive] = useState();
+
+  const handleSetActive = () => {
+    setIsActive(true);
+  }
+
+  const handleSetInactive = () => {
+    setIsActive(false);
+  };
+
   return (
     <div className="App">
-      <Planet></Planet>
-      <Stars></Stars>
+        <Planet />
+        <Header onActive={handleSetActive} onInactive={handleSetInactive}/>
+        <Cursor />
     </div>
   );
 }

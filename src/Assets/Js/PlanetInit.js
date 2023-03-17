@@ -49,11 +49,11 @@ export function PlanetInit () {
             color: 0xffffff,
             emissive: '#111111',
 
-            map: new THREE.TextureLoader().load('https://upload.wikimedia.org/wikipedia/commons/2/2c/Generic_Celestia_asteroid_texture.jpg'),
-            bumpMap: new THREE.TextureLoader().load('https://upload.wikimedia.org/wikipedia/commons/2/2c/Generic_Celestia_asteroid_texture.jpg'),
+            map: new THREE.TextureLoader().load('https://s3-us-west-2.amazonaws.com/s.cdpn.io/17271/lroc_color_poles_1k.jpg'),
+            bumpMap: new THREE.TextureLoader().load('https://s3-us-west-2.amazonaws.com/s.cdpn.io/17271/ldem_3_8bit.jpg'),
             bumpScale:   0.025,
             specularMap: new THREE.TextureLoader().load('https://upload.wikimedia.org/wikipedia/commons/2/2c/Generic_Celestia_asteroid_texture.jpg'),
-            specular: new THREE.Color('#232323')
+            specular: new THREE.Color('#fff')
         });
         
         var mat3 = new THREE.ShaderMaterial({
@@ -65,6 +65,9 @@ export function PlanetInit () {
             transparent: true
         });
         
+        halo.scale.x = 0.90;
+        halo.scale.y = 0.90;
+
         var planet = new THREE.Mesh(geo_planet, mat);
         planet.scale.x = planet.scale.y = planet.scale.z = 15;
         circle.add(planet);
@@ -106,15 +109,15 @@ export function PlanetInit () {
     function animate() {
         requestAnimationFrame(animate);
 
-        particle.rotation.x += 0.0000;
-        particle.rotation.y -= 0.0040;
-        circle.rotation.x -= 0.001;
-        circle.rotation.y -= 0.001;
+        circle.rotation.x -= 0.002;
+        circle.rotation.y -= 0.002;
         
         halo.rotation.z -= 0.005;
-        luminor.rotation.z -= 0.005;
         
+        luminor.rotation.z -= 0.005;
+
         renderer.clear();
         renderer.render(scene, camera)
     };
+
 }

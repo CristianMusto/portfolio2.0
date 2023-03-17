@@ -1,4 +1,14 @@
 .App {
   overflow-x: hidden;
-  background-color: #000;
+  overflow-y: scroll;
+  width: 100vw;
+  height: 200vh;
+  position: relative;
+  top: 0;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 }
