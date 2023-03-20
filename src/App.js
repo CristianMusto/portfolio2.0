@@ -3,6 +3,7 @@ import Cursor from './Components/UI/Cursor/Cursor';
 import Header from './Components/Commons/Header/Header';
 import './App.scss';
 import { useState } from 'react';
+import Loader from './Components/UI/Loader/Loader';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <div className="App">
+        <Loader />
         <Planet />
         <Header onActive={handleSetActive} onInactive={handleSetInactive}/>
         <Cursor />
