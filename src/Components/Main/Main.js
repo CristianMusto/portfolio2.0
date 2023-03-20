@@ -1,11 +1,9 @@
-import Stars from "../UI/Stars/Stars";
 import styleClass from "./Main.module.scss";
 
 const Main = () => {
     return (
-        <div className={styleClass.main}>
+        <div className={styleClass.main} id="About">
             <h1>ciao</h1>
-            <Stars></Stars>
         </div>
     )
 }

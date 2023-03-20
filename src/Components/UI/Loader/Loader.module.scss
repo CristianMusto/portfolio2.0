@@ -1,4 +1,4 @@
-.isLoading {
+.container.isLoading {
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     z-index: 999;
-    transform: ;
+    opacity: 1;
     transition: all 2s linear;
 
     .overlay {
@@ -90,49 +90,49 @@
         stroke-width: 1;
     }
     
-    /*
-        Loader animations
-        ========================================================================== */
-    
     @keyframes spin {
         from {
-        transform: rotate(0);
+            transform: rotate(0);
         }
         to {
-        transform: rotate(-1turn);
+            transform: rotate(-1turn);
         }
     }
     
     @keyframes dash {
         0% {
-        stroke-dashoffset: 500;
-        // stroke-width: 3;
+            stroke-dashoffset: 500;
+            stroke-width: 3;
         }
         50% {
-        stroke-dashoffset: 380;
-        // stroke-width: 5;
+            stroke-dashoffset: 380;
+            stroke-width: 5;
         }
         100% {
-        stroke-dashoffset: 500;
-        // stroke-width: 3;
+            stroke-dashoffset: 500;
+            stroke-width: 3;
         }
     }
     
     @keyframes pulse {
         0% {
-        transform: scale(1);
+            transform: scale(1);
         }
         50% {
-        transform: scale(.85);
+            transform: scale(.85);
         }
         100% {
-        transform: scale(1);
+            transform: scale(1);
         }
     }
 }
 
-.loaded {
-    z-index: -99;
+.container.loaded {
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+    width: 100%;
     opacity: 0;
-    transition: all 1s linear;
+    pointer-events: none;
+    transition: all 2s linear;
 }

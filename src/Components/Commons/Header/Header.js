@@ -9,21 +9,21 @@ const Header = props => {
     };
 
     const [isMobile, setIsMobile] = useState();
-    const [isOpen, setIsOpen] = useState();
+    //const [isOpen, setIsOpen] = useState();
 
     const [windowSize, setWindowSize] = useState(getWindowSize());
 
-    const menuOpen = () => {
-        if (isOpen) {
-            setIsOpen(false);
-        } else {
-            setIsOpen(true);
-        }
-    };
+    // const menuOpen = () => {
+    //     if (isOpen) {
+    //         setIsOpen(false);
+    //     } else {
+    //         setIsOpen(true);
+    //     }
+    // };
 
-    const closeMenu = () => {
-        setIsOpen(false);
-    };
+    // const closeMenu = () => {
+    //     setIsOpen(false);
+    // };
 
     useEffect(() => {
         function handleWindowResize() {
@@ -53,46 +53,40 @@ const Header = props => {
                         <Link
                         to="About"
                         offset={-100}
-                        
                         activeClass={styleClass.active}
-                        onSetActive={props.onActive}
-                        onSetInactive={props.onInactive}
                         ><h3>About</h3></Link>
                     </li>
-                    <li className={styleClass.menuItem} style={{ marginleft: "-5%" }}>
+                    <li className={`${styleClass.menuItem} menuItem`}>
                         <Link
                         to="Certificates"
                         offset={-100}
                         activeClass={styleClass.active}
-                        onSetActive={props.onActive}
                         ><h3>Certificates</h3></Link>
                     </li>
-                    <li className={`${styleClass.menuItem} ${styleClass.logo}`}>
+                    <li className={`${styleClass.menuItem} menuItem`}>
                         <Link
                         to="Cover"
                         spy={true}
                         smooth={true}
                         offset={0}
                         >
-                        <h3 data-text="CM" className={styleClass.logo}>
+                        <h3>
                             CM
                         </h3>
                         </Link>
                     </li>
-                    <li className={styleClass.menuItem}>
+                    <li className={`${styleClass.menuItem} menuItem`}>
                         <Link
                         to="Knowledge"
                         offset={-100}
                         activeClass={styleClass.active}
-                        onSetActive={props.onActive}
                         ><h3>Knowledge</h3></Link>
                     </li>
-                    <li className={styleClass.menuItem}>
+                    <li className={`${styleClass.menuItem} menuItem`}>
                         <Link
                         to="Projects"
                         offset={-100}
                         activeClass={styleClass.active}
-                        onSetActive={props.onActive}
                         ><h3>Projects</h3></Link>
                     </li>
                 </ul>
