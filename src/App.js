@@ -3,6 +3,7 @@ import Cursor from './Components/UI/Cursor/Cursor';
 import Header from './Components/Commons/Header/Header';
 import './App.scss';
 import { useState } from 'react';
+import Main from './Components/Main/Main';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
     <div className="App">
         <Planet />
         <Header onActive={handleSetActive} onInactive={handleSetInactive}/>
+        <Main />
         <Cursor />
     </div>
   );
