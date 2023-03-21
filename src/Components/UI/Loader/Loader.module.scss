@@ -9,7 +9,7 @@
     left: 0;
     z-index: 999;
     opacity: 1;
-    transition: all 2s linear;
+    transition: all 1s linear;
 
     .overlay {
         position: absolute;
@@ -129,10 +129,10 @@
 
 .container.loaded {
     position: absolute;
-    top: 0%;
-    z-index: -1;
+    top: -100%;
+    z-index: -10;
     width: 100%;
     opacity: 0;
     pointer-events: none;
-    transition: all 2s linear;
+    transition: all 1s linear;
 }
