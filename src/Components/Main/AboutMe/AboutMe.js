@@ -3,7 +3,7 @@ import CharacterScene from '../../UI/3ds/Character/CharacterScene';
 
 const AboutMe = () => {
     return (
-        <div className={styleClass.aboutContainer} >
+        <div className={styleClass.aboutContainer} id="About">
             <div className={styleClass.aboutContent}>
                 <div className={styleClass.aboutText}>
                     <h2>Who am i?</h2>

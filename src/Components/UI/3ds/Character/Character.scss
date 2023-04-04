@@ -4,7 +4,8 @@
     height: 100vh !important;
     div {
         position: absolute;
-        right: 0%;
-        width: 100% !important;
+        right: 50%;
+        transform: translateX(50%);
+        width: 50% !important;
     }
 }
