@@ -47,8 +47,7 @@ export function PlanetInit () {
         
         var mat = new THREE.MeshPhongMaterial({
             color: 0xffffff,
-            emissive: '#111111',
-
+            emissive: 0x111111,
             map: new THREE.TextureLoader().load('https://s3-us-west-2.amazonaws.com/s.cdpn.io/17271/lroc_color_poles_1k.jpg'),
             bumpMap: new THREE.TextureLoader().load('https://s3-us-west-2.amazonaws.com/s.cdpn.io/17271/ldem_3_8bit.jpg'),
             bumpScale:   0.025,
@@ -81,10 +80,10 @@ export function PlanetInit () {
         ball2.position.set(25,5,1)
         halo.add(ball2);
         
-        var ambientLight = new THREE.AmbientLight(0x000000);
+        var ambientLight = new THREE.AmbientLight(0xffffff);
         scene.add(ambientLight);
         
-        var hemiLight = new THREE.HemisphereLight(0x000000, 0x1111111, 20);
+        var hemiLight = new THREE.HemisphereLight(0x000000, 0x111111, 20);
                 hemiLight.position.set(-1, -1, 2);
         luminor.add(hemiLight);
         

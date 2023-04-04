@@ -1,0 +1,29 @@
+.aboutContainer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .aboutContent {
+        height: 100vh;
+        flex: 0 0 50%;
+        
+        .aboutText {
+            padding: 40px;
+
+            h2 {
+                text-align: left;
+                margin: 10px 0;
+
+                @media (max-width: 768px) {
+                    text-align: center;
+                }
+            }
+
+            p {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
