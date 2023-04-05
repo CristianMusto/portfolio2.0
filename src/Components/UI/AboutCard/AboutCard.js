@@ -59,7 +59,7 @@ const AboutCard = () => {
                 </div>
                 <div className={`card-section ${expActive ? "isActive" : 'notActive'}`} id="experience" ref={sections}>
                 <div className="card-content">
-                    <div className="card-subtitle">KNOWLEDGE AND EXPERIENCE</div>
+                    <div className="card-subtitle">MY JOURNEY</div>
                     <div className="card-timeline">
                     <div className="card-item" data-year="2023">
                         <div className="card-item-title">Software Developer at <span>TXT Group</span></div>
@@ -90,7 +90,7 @@ const AboutCard = () => {
                 </div>
                 <div className="card-buttons" ref={buttons}>
                     <button data-section="#about" className={`${aboutBtnActive ? 'is-active' : ''}`} onClick={handleButtonClick}>ABOUT</button>
-                    <button data-section="#experience" className={`${expBtnActive ? 'is-active' : ''}`} onClick={handleButtonClick}>EXPERIENCE</button>
+                    <button data-section="#experience" className={`${expBtnActive ? 'is-active' : ''}`} onClick={handleButtonClick}>JOURNEY</button>
                 </div>
             </div>
             </div>
