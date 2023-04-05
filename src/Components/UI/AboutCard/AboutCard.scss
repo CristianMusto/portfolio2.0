@@ -1,7 +1,7 @@
 .card {
-    width: 75vh;
+    width: 50vh;
     height: 100%;
-    margin: auto;
+    margin: 20vh auto 0 auto;
     overflow-y: auto;
     position: relative;
     z-index: 1;
@@ -13,12 +13,17 @@
     border-radius: 10px;
     box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
     color: black;
+    transition: 0.5s;
 
     &[data-state="#experience"] {
       max-height: 80vh;
+      transition: 0.5s;
     }
 
     &.is-active {
+      opacity: 1;
+      height: 100%;
+      transition: 0.5s;
       .card-header {
         height: 80px;
       }
@@ -54,14 +59,20 @@
       }
     }
 
+    &.notActive {
+      opacity: 0;
+      height: 0;
+      transition: 0.5s;
+    }
+
     .card-header {
       position: relative;
       display: flex;
       height: 200px;
       flex-shrink: 0;
       width: 100%;
-      transition: 0.3s;
-    
+      transition: 0.25s;
+      color: white;
       * {
         transition: 0.3s;
       }
@@ -71,14 +82,13 @@
       width: 100%;
       height: 100%;
       position: absolute;
-      height: 160px;
       top: 0%;
       left: 0;
       will-change: top;
       background-size: cover;
       background-position: center;
-      filter: blur(30px);
-      transform: scale(1.2);
+      filter: blur(10px);
+      transform: scale(1.1);
       transition: 0.5s;
     }
 
@@ -131,7 +141,7 @@
     .card-subtitle {
       font-weight: 700;
       font-size: 13px;
-      margin-bottom: 8px;
+      margin: 15px 0;
     }
     
     .card-content {

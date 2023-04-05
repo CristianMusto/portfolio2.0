@@ -1,5 +1,6 @@
 import "./AboutCard.scss";
-import profilePic from "../../../Assets/Images/profile.jpg"
+import profilePic from "../../../Assets/Images/profile.jpg";
+import aboutBack from "../../../Assets/Images/aboutBack.jpg"
 import { useRef, useState } from "react";
 
 const AboutCard = () => {
@@ -17,7 +18,6 @@ const AboutCard = () => {
             ? card.current.classList.add("is-active")
             : card.current.classList.remove("is-active");
         card.current.setAttribute("data-state", targetSection);
-        console.log(buttons)
         if (e.target.dataset.section === '#experience') {
             setExpActive(true)
             setExpBtnActive(true)
@@ -34,16 +34,16 @@ const AboutCard = () => {
     return (
         <div className="card" ref={card} data-state="#about">
             <div className="card-header">
-                <div className="card-cover" style={{background: "url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')"}}></div>
+                <div className="card-cover" style={{backgroundImage: `url(${aboutBack})`}}></div>
                 <img className="card-avatar" src={`${profilePic}`} alt="avatar" />
                 <h1 className="card-fullname">Cristian Musto</h1>
                 <h2 className="card-jobtitle">Design is ART, Design is LIFE</h2>
             </div>
             <div className="card-main">
-                <div className={`card-section ${aboutActive ? "isActive" : ''}`} id="about" ref={sections}>
+                <div className={`card-section ${aboutActive ? "isActive" : 'notActive'}`} id="about" ref={sections}>
                 <div className="card-content">
                     <div className="card-subtitle">ABOUT ME</div>
-                    <p className="card-desc">Hi, 
+                    <p className="card-desc">Hi, are you curious to find out more about me? Well, then let's get started. As I think you may have noticed I have a soft spot for design and creativity, I always try to bring this into every job I do, but there's not only this to know about me. I am a great lover of challenges and knowledge, for this very reason I have a lot of transferable knowledge with respect to my profession, if you are still interested in knowing more about me click the "EXPERIENCE" button to discover my journey in the world of development. Oh and do not forget to check my socials.
                     </p>
                 </div>
                 <div className="card-social">
@@ -57,7 +57,7 @@ const AboutCard = () => {
                         <path d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 002.882 0z" /></svg></a>
                 </div>
                 </div>
-                <div className={`card-section ${expActive ? "isActive" : ''}`} id="experience" ref={sections}>
+                <div className={`card-section ${expActive ? "isActive" : 'notActive'}`} id="experience" ref={sections}>
                 <div className="card-content">
                     <div className="card-subtitle">KNOWLEDGE AND EXPERIENCE</div>
                     <div className="card-timeline">
@@ -79,6 +79,10 @@ const AboutCard = () => {
                     </div>
                     <div className="card-item" data-year="2021">
                         <div className="card-item-title">Front-end Developer Course by <span>Epicode School</span></div>
+                        <div className="card-item-desc">Disrupt stumptown retro everyday carry unicorn.</div>
+                    </div>
+                    <div className="card-item" data-year="2019">
+                        <div className="card-item-title">Start the journey as <span>Self-taught</span></div>
                         <div className="card-item-desc">Disrupt stumptown retro everyday carry unicorn.</div>
                     </div>
                     </div>
