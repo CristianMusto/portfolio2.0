@@ -2,6 +2,9 @@
     flex: 0 0 50%;
     width: 50vw !important;
     height: 100vh !important;
+    position: relative;
+    top: 0;
+    z-index: 1;
     div {
         position: absolute;
         right: 50%;

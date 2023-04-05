@@ -53,7 +53,7 @@
       }
     
       .card-jobtitle {
-        bottom: 16px;
+        bottom: 35%;
         letter-spacing: 1px;
         font-size: 10px;
       }
@@ -103,17 +103,6 @@
       bottom: 0;
       left: 50%;
       transform: translateX(-50%) translateY(-64px);
-    }
-
-    .card-fullname {
-      position: absolute;
-      bottom: 0;
-      font-size: 22px;
-      font-weight: 700;
-      text-align: center;
-      white-space: nowrap;
-      transform: translateY(-10px) translateX(-50%);
-      left: 50%;
     }
 
     .card-jobtitle {

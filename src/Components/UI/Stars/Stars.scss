@@ -28,7 +28,7 @@
         background: transparent;
         box-shadow: $shadows-small;
         border-radius: 100%;
-        animation: animStar 50s linear infinite;
+        animation: animStar 60s linear infinite;
             
         &:after {
             content: " ";
@@ -47,7 +47,7 @@
         background: transparent;
         box-shadow: $shadows-medium;
         border-radius: 100%;
-        animation: animStar 100s linear infinite;
+        animation: animStar 120s linear infinite;
         
         &:after {
             content: " ";
@@ -66,7 +66,7 @@
         background: transparent;
         box-shadow: $shadows-big;
         border-radius: 100%;
-        animation: animStar 150s linear infinite;
+        animation: animStar 180s linear infinite;
             
         &:after {
             content: " ";
