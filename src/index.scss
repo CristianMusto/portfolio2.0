@@ -14,3 +14,7 @@ html *,
 body * {
     cursor: none;
 }
+
+::-webkit-scrollbar {
+    display: none;
+  }
