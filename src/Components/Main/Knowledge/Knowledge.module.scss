@@ -1,0 +1,13 @@
+.knowledgeContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+    .knowledgeContent {
+        flex: 0 0 50%;
+        width: 50vw;
+        height: 100vh;
+    }
+}

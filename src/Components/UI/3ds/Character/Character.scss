@@ -1,6 +1,6 @@
 #character {
     flex: 0 0 50%;
-    width: 50vw !important;
+    width: 100% !important;
     height: 100vh !important;
     position: relative;
     top: 0;
@@ -9,6 +9,7 @@
         position: absolute;
         right: 50%;
         transform: translateX(50%);
-        width: 50% !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
 }

@@ -7,7 +7,7 @@ import './Character.scss'
 export default function CharacterScene() {
    return (
       <Canvas
-         camera={{ position: [0, 0, 12.25], fov: 15 }}
+         camera={{ position: [0, 0, 1], fov: 15 }}
          
          id='character'
       >
@@ -15,7 +15,7 @@ export default function CharacterScene() {
          <ambientLight intensity={0.1} />
          <directionalLight intensity={0.4} />
          <Suspense fallback={null}>
-            <Avatar position={[0, -0.9, 3]} />
+            <Avatar position={[0, -0.8, 5]} />
          </Suspense>
          <OrbitControls enableZoom={false} enableRotate={false}/>
       </Canvas>

@@ -3,12 +3,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0;
+    padding: 40px;
     position: relative; 
     top: 0;
+    height: 100%;
 
     .aboutContent {
-        height: 100vh;
         flex: 0 0 50%;
         
         .aboutText {
