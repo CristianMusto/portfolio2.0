@@ -42,7 +42,7 @@ const AboutCard = () => {
                 <div className={`card-section ${aboutActive ? "isActive" : 'notActive'}`} id="about" ref={sections}>
                 <div className="card-content">
                     <div className="card-subtitle">ABOUT ME</div>
-                    <p className="card-desc">Hi, are you curious to find out more about me? Well, then let's get started. As I think you may have noticed I have a soft spot for design and creativity, I always try to bring this into every job I do, but there's not only this to know about me. I am a great lover of challenges and knowledge, for this very reason I have a lot of transferable knowledge with respect to my profession, if you are still interested in knowing more about me click the "JOURNEY" button to discover my story in the world of development.
+                    <p className="card-desc">Hi, are you curious to find out more about me? Well, then let's get started. As I think you may have noticed I have a soft spot for design and creativity, I always try to bring this into every job I do, but there's not only this to know about me. I am a great lover of challenges and knowledge, for this very reason I have a lot of transferable knowledge with respect to my profession, if you are still interested in knowing more about me click the "JOURNEY" button to discover my story in the world of development. Oh and do not forget to check my socials.
                     </p>
                 </div>
                 <div className="card-social">

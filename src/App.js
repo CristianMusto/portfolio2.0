@@ -10,8 +10,8 @@ function App() {
 
   return (
     <div className="App">
-        {/*<Header/>*/}
-        {/*<Loader />*/}
+        {<Header/>}
+        {<Loader />}
         <Planet />
         <Main />
         <Cursor />
