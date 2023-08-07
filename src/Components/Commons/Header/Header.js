@@ -1,5 +1,5 @@
 import styleClass from "./Header.module.scss";
-import { Link } from "react-scroll";
+import LinkComponent from "../../UI/Links/Links";
 //import { useState, useEffect } from "react";
 
 const Header = props => {
@@ -42,9 +42,6 @@ const Header = props => {
     //         window.removeEventListener("resize", handleWindowResize);
     //     };
     // }, [windowSize]);
-    const handleSetActive = (to) => {
-        console.log(to);
-    }
     return (
         <div className={styleClass.header}>
             <div
@@ -52,46 +49,44 @@ const Header = props => {
             >
                 <ul className={`${styleClass.listMenu} listMenu`}>
                     <li className={`${styleClass.menuItem} menuItem`}>
-                        <Link
+                        <LinkComponent
                         to="About"
                         offset={-100}
+                        text="About"
                         activeClass={styleClass.active}
-                        onSetActive={handleSetActive}
-                        onClick={handleSetActive}
-                        ><h3>About</h3></Link>
+                        />
                     </li>
                     <li className={`${styleClass.menuItem} menuItem`}>
-                        <Link
+                        <LinkComponent
                         to="Certificates"
                         offset={-100}
+                        text="Certificates"
                         activeClass={styleClass.active}
-                        ><h3>Certificates</h3></Link>
+                        />
                     </li>
                     <li className={`${styleClass.menuItem} menuItem`}>
-                        <Link
+                        <LinkComponent
                         to="Cover"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        >
-                        <h3>
-                            CM
-                        </h3>
-                        </Link>
+                        offset={-100}
+                        text="CM"
+                        activeClass={styleClass.active}
+                        />
                     </li>
                     <li className={`${styleClass.menuItem} menuItem`}>
-                        <Link
+                        <LinkComponent
                         to="Knowledge"
                         offset={-100}
+                        text="Knowledge"
                         activeClass={styleClass.active}
-                        ><h3>Knowledge</h3></Link>
+                        />
                     </li>
                     <li className={`${styleClass.menuItem} menuItem`}>
-                        <Link
+                        <LinkComponent
                         to="Projects"
                         offset={-100}
+                        text="Projects"
                         activeClass={styleClass.active}
-                        ><h3>Projects</h3></Link>
+                        />
                     </li>
                 </ul>
             </div>

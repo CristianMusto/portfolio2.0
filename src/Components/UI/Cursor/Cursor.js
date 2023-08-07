@@ -13,7 +13,7 @@ const Cursor = () => {
         addEventListeners();
         handleLinkHoverEvents();
         return () => removeEventListeners();
-    }, []);
+    });
 
     const addEventListeners = () => {
         document.addEventListener("mousemove", onMouseMove);

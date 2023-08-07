@@ -1,12 +1,13 @@
 import styleClass from "./Knowledge.module.scss";
+import { Element } from 'react-scroll';
 
 const Knowledge = () => {
     return (
-        <div className={styleClass.knowledgeContainer}>
+        <Element className={styleClass.knowledgeContainer} id="Knowledge">
             <div className={styleClass.knowledgeContent}>
 
             </div>
-        </div>
+        </Element>
     )
 } 
 

@@ -15,7 +15,6 @@ export function PlanetInit () {
     }
 
     function init() {
-        console.log('dentro init')
         renderer = new THREE.WebGLRenderer({
             antialias: true,
             alpha: true
