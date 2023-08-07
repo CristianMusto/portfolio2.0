@@ -1,6 +1,6 @@
 import styleClass from "./Header.module.scss";
 import { Link } from "react-scroll";
-import { useState, useEffect } from "react";
+//import { useState, useEffect } from "react";
 
 const Header = props => {
     // const getWindowSize = () => {
