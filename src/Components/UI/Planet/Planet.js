@@ -7,7 +7,7 @@ import "./Planet.scss";
 const Planet = () => {
     PlanetInit();
     return (
-        <Element className="background" id="Cover">
+        <Element className="background" name="Cover">
             <Title />
             <Stars></Stars>
             <div id="canvas"></div>
