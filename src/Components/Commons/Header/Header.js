@@ -1,5 +1,5 @@
 import styleClass from "./Header.module.scss";
-import LinkComponent from "../../UI/Links/Links";
+import { Link } from "react-scroll";
 //import { useState, useEffect } from "react";
 
 const Header = props => {
@@ -43,54 +43,79 @@ const Header = props => {
     //     };
     // }, [windowSize]);
     return (
-        <div className={styleClass.header}>
+        <header className={styleClass.header}>
             <div
             className={`${styleClass.headerMenu} headerMenu`}
             >
                 <ul className={`${styleClass.listMenu} listMenu`}>
                     <li className={`${styleClass.menuItem} menuItem`}>
-                        <LinkComponent
+                        <Link
                         to="About"
-                        offset={-100}
-                        text="About"
+                        offset={0}
                         activeClass={styleClass.active}
-                        />
+                        duration={1000}
+                        spy={true}
+                        hashSpy={true}
+                        smooth={true}
+                        >
+                            <h3>About</h3>
+                        </Link>
                     </li>
                     <li className={`${styleClass.menuItem} menuItem`}>
-                        <LinkComponent
+                        <Link
                         to="Certificates"
-                        offset={-100}
-                        text="Certificates"
+                        offset={0}
                         activeClass={styleClass.active}
-                        />
+                        duration={1000}
+                        spy={true}
+                        hashSpy={true}
+                        smooth={true}
+                        >
+                            <h3>Certificates</h3>
+                        </Link>
                     </li>
                     <li className={`${styleClass.menuItem} menuItem`}>
-                        <LinkComponent
+                        <Link
                         to="Cover"
-                        offset={-100}
-                        text="CM"
+                        offset={0}
                         activeClass={styleClass.active}
-                        />
+                        duration={1000}
+                        spy={true}
+                        hashSpy={true}
+                        smooth={true}
+                        >
+                            <h3>CM</h3>
+                        </Link>
                     </li>
                     <li className={`${styleClass.menuItem} menuItem`}>
-                        <LinkComponent
+                        <Link
                         to="Knowledge"
-                        offset={-100}
-                        text="Knowledge"
+                        offset={0}
                         activeClass={styleClass.active}
-                        />
+                        duration={1000}
+                        spy={true}
+                        hashSpy={true}
+                        smooth={true}
+                        >
+                            <h3>Knowledge</h3>
+                        </Link>
                     </li>
                     <li className={`${styleClass.menuItem} menuItem`}>
-                        <LinkComponent
+                        <Link
                         to="Projects"
-                        offset={-100}
-                        text="Projects"
+                        offset={0}
                         activeClass={styleClass.active}
-                        />
+                        duration={1000}
+                        spy={true}
+                        hashSpy={true}
+                        smooth={true}
+                        >
+                            <h3>Projects</h3>
+                        </Link>
                     </li>
                 </ul>
             </div>
-        </div>
+        </header>
     )
 }
 

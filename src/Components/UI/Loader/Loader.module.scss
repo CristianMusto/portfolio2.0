@@ -47,7 +47,7 @@
         height: 4em;
         background-color: $color;
         border-radius: 50%;
-        animation: pulse $duration $ease #{$duration/2 + .2s} infinite;
+        animation: pulse $duration $ease calc($duration/2 + .2s) infinite;
         will-change: transform
         
         }
@@ -129,8 +129,8 @@
 
 .container.loaded {
     position: absolute;
-    top: -100%;
-    z-index: -10;
+    top: -200%;
+    z-index: -100;
     width: 100%;
     opacity: 0;
     pointer-events: none;
