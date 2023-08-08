@@ -56,7 +56,7 @@ const Header = props => {
                         duration={1000}
                         spy={true}
                         hashSpy={true}
-                        smooth={true}
+                        smooth="easeInOutQuint"
                         >
                             <h3>About</h3>
                         </Link>
@@ -69,7 +69,7 @@ const Header = props => {
                         duration={1000}
                         spy={true}
                         hashSpy={true}
-                        smooth={true}
+                        smooth="easeInOutQuint"
                         >
                             <h3>Certificates</h3>
                         </Link>
@@ -82,7 +82,7 @@ const Header = props => {
                         duration={1000}
                         spy={true}
                         hashSpy={true}
-                        smooth={true}
+                        smooth="easeInOutQuint"
                         >
                             <h3>CM</h3>
                         </Link>
@@ -95,7 +95,7 @@ const Header = props => {
                         duration={1000}
                         spy={true}
                         hashSpy={true}
-                        smooth={true}
+                        smooth="easeInOutQuint"
                         >
                             <h3>Knowledge</h3>
                         </Link>
@@ -108,7 +108,7 @@ const Header = props => {
                         duration={1000}
                         spy={true}
                         hashSpy={true}
-                        smooth={true}
+                        smooth="easeInOutQuint"
                         >
                             <h3>Projects</h3>
                         </Link>

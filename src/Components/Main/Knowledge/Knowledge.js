@@ -1,5 +1,6 @@
 import styleClass from "./Knowledge.module.scss";
 import { Element } from 'react-scroll';
+import Stars from "../../UI/Stars/Stars";
 
 const Knowledge = () => {
     return (
@@ -7,6 +8,7 @@ const Knowledge = () => {
             <div className={styleClass.knowledgeContent}>
                 
             </div>
+            <Stars />
         </Element>
     )
 } 

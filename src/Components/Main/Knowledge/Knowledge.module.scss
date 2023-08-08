@@ -1,12 +1,6 @@
 .knowledgeContainer {
+    position: relative;
+    top: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    .knowledgeContent {
-        flex: 0 0 50%;
-        width: 50vw;
-        height: 100vh;
-    }
+    height: 100%;
 }
