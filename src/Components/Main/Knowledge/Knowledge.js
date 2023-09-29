@@ -11,7 +11,7 @@ const Knowledge = () => {
         const knowledgeFetch = async () => {
         const data = await (
             await fetch(
-            "https://cristianmusto.github.io/portfolio2.0/json/cardsKE.json"
+            "https://cristianmusto.github.io/react-portfolio/json/cardsKE.json"
             )
         ).json();
         setKnowledgeContent(data);
@@ -25,7 +25,7 @@ const Knowledge = () => {
             <div className={styleClass.knowledgeContent}>
             {knowledgeContent.length > 0 ? (
             knowledgeContent.map((el) => (
-              <KnowledgeCard className={styleClass.div}  key={el.id}/>
+              <KnowledgeCard className={styleClass.div}  key={el.id} src={el.logo}/>
             ))
           ) : (
             <h3>Coming Soon...</h3>
