@@ -1,9 +1,15 @@
 import styleClass from "./KnowledgeCard.module.scss";
+import { useState, useEffect } from "react";
+import profilePic from "../../../Assets/Images/profile.jpg";
 
 const KnowledgeCard = (props) => {
+    const [delay, setDelay] = useState();
+    useEffect(()=>{
+        setDelay(Math.random() * 2)
+    }, [])
     return (
-        <div className={`${styleClass.oneDiv} ${props.className}`}>
-            <div className={styleClass.text}>Hello There </div>
+        <div className={`${styleClass.oneDiv} ${props.className}`} style={{animationDelay: `${delay}s`}}>
+            <img src={profilePic} alt="profile" className={styleClass.image}/>
         </div>
     )
 }
