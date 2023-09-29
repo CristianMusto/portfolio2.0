@@ -1,24 +1,35 @@
 import styleClass from "./Knowledge.module.scss";
 import { Element } from 'react-scroll';
 import KnowledgeCard from "../../UI/KnowledgeCard/KnowledgeCard";
+import { useState, useEffect } from "react";
 
 const Knowledge = () => {
+
+    const [knowledgeContent, setKnowledgeContent] = useState([]);
+
+    useEffect(() => {
+        const knowledgeFetch = async () => {
+        const data = await (
+            await fetch(
+            "https://cristianmusto.github.io/portfolio2.0/json/cardsKE.json"
+            )
+        ).json();
+        setKnowledgeContent(data);
+        };
+
+        knowledgeFetch();
+    }, []);
+
     return (
         <Element className={styleClass.knowledgeContainer} id="Knowledge">
             <div className={styleClass.knowledgeContent}>
-                <KnowledgeCard className={styleClass.div1}/>
-                <KnowledgeCard className={styleClass.div2}/>
-                <KnowledgeCard className={styleClass.div3}/>
-                <KnowledgeCard className={styleClass.div4}/>
-                <KnowledgeCard className={styleClass.div5}/>
-                <KnowledgeCard className={styleClass.div6}/>
-                <KnowledgeCard className={styleClass.div7}/>
-                <KnowledgeCard className={styleClass.div8}/>
-                <KnowledgeCard className={styleClass.div9}/>
-                <KnowledgeCard className={styleClass.div10}/>
-                <KnowledgeCard className={styleClass.div11}/>
-                <KnowledgeCard className={styleClass.div12}/>
-                <KnowledgeCard className={styleClass.div13}/>
+            {knowledgeContent.length > 0 ? (
+            knowledgeContent.map((el) => (
+              <KnowledgeCard className={styleClass.div}  key={el.id}/>
+            ))
+          ) : (
+            <h3>Coming Soon...</h3>
+          )}
             </div>
         </Element>
     )
