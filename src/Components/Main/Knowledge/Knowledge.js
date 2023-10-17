@@ -52,7 +52,7 @@ const Knowledge = () => {
             </div>
 
             <div className={styleClass.knowledgeContentText}>
-              {selectedItemDesc !== null ? <p>{selectedItemDesc}</p> : <p>Coming soon...</p>}
+              {selectedItemDesc !== null ? <p>{selectedItemDesc}</p> : <p>Others coming soon...</p>}
             </div>
             
         </Element>
