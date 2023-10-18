@@ -4,7 +4,7 @@ const CertificatesCard = (props) => {
     
     return (
         <div className={`${props.className} cardCertificate`} id={props.id} style={{backgroundImage: `url("${props.image}")`,  boxShadow: `0 0 20px 10px ${props.shadow}`}}>
-            <p className="heading">{props.title}</p>
+            <p className="heading">{props.title !== 'Coming Soon' ? props.title : ''}</p>
             <p className="para">{props.desc}
             </p>
             {props.title !== 'Coming Soon' ?
