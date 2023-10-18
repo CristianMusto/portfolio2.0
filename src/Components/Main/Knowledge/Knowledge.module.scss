@@ -1,7 +1,6 @@
 .knowledgeContainer {
     position: relative;
     top: 0;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +20,10 @@
         height: 100%;
         text-align: center;
         color: white;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .div:nth-child(1) { grid-area: 3 / 3 / 4 / 4; }

@@ -51,7 +51,7 @@ const Header = props => {
                     <li className={`${styleClass.menuItem} menuItem`}>
                         <Link
                         to="About"
-                        offset={0}
+                        offset={150}
                         activeClass={styleClass.active}
                         duration={1000}
                         spy={true}

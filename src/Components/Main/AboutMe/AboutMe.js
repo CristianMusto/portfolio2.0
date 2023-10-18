@@ -7,8 +7,10 @@ import { Element } from "react-scroll";
 const AboutMe = () => {
     return (
         <Element className={styleClass.aboutContainer} name="About">
-            <AboutCard />
-            <CharacterScene />
+            <div className={styleClass.aboutContent}>
+                <AboutCard />
+                <CharacterScene />
+            </div>
         </Element>
     )
 }

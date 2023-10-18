@@ -23,7 +23,7 @@ const Certificates = () => {
             <div className={styleClass.certificatesContent}>
             {certificateContent.length > 0 ? (
               certificateContent.map((el) => (
-                <CertificatesCard className={`${styleClass.div}`} key={el.id} src={`${el.link}`} id={el.id} title={el.title} desc={el.description} 
+                <CertificatesCard key={el.id} src={`${el.link}`} id={el.id} title={el.title} desc={el.description} 
                 shadow={el.shadow} image={`${baseUrl}${el.logo}`}/>
               ))
               ) : (
