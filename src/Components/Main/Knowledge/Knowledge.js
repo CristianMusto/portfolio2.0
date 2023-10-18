@@ -44,7 +44,8 @@ const Knowledge = () => {
             <div className={styleClass.knowledgeContent}>
             {knowledgeContent.length > 0 ? (
               knowledgeContent.map((el) => (
-                <KnowledgeCard className={`${styleClass.div} ${selectedItemId === el.id ? styleClass.active : ''}`} key={el.id} src={`${baseUrl}${el.logo}`} onClick={() => handleActive(el)} id={el.id}/>
+                <KnowledgeCard className={`${styleClass.div} ${selectedItemId === el.id ? styleClass.active : ''}`} key={el.id} 
+                src={`${baseUrl}${el.logo}`} onClick={() => handleActive(el)} id={el.id} shadow={el.shadow}/>
               ))
               ) : (
                 <h3>Coming Soon...</h3>
