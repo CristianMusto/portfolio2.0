@@ -92,12 +92,5 @@
     "description": "learnt in LBA",
     "logo": "images/logos/sqlLogo.jpg",
     "shadow": "#FF271B"
-  },
-  {
-    "id": 12,
-    "title": "Coming Soon",
-    "description": "Coming Soon",
-    "logo": "images/logos/comingSoon.jpeg",
-    "shadow": "#FFFFFF"
   }
 ]

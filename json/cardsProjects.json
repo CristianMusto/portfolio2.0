@@ -52,14 +52,5 @@
       "link": "https://www.nssmag.com/it/archive-stories",
       "shadow": "#FFFFFF",
       "credits": "credits: Nss magazine, Brownie"
-    },   
-    {
-      "id": 99,
-      "title": "Coming Soon",
-      "description": "New projects will come soon!",
-      "logo": "images/projects/comingSoon.jpeg",
-      "link": "",
-      "shadow": "#000000",
-      "credits": ""
     }
   ]
