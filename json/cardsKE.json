@@ -44,7 +44,7 @@
     "title": "GIT",
     "description": "learnt in epicode and improved in nss",
     "logo": "images/logos/git.png",
-    "shadow": "#000000"
+    "shadow": "#FFFFFF"
   },
 
   {
@@ -90,14 +90,14 @@
     "id": 11,
     "title": "SQL",
     "description": "learnt in LBA",
-    "logo": "images/logos/php-logo-hd.jpg",
-    "shadow": "#5F82BA"
+    "logo": "images/logos/sqlLogo.jpg",
+    "shadow": "#FF271B"
   },
   {
     "id": 12,
     "title": "Coming Soon",
     "description": "",
     "logo": "images/logos/comingSoon.jpeg",
-    "shadow": "#000000"
+    "shadow": "#FFFFFF"
   }
 ]
