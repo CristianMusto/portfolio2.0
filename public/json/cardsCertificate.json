@@ -28,11 +28,11 @@
 
     {
         "id": 10,
-        "title": "Coming Soon",
+        "title": "",
         "description": "I'm working hard to learn new technologies, libraries and framework to be a better developer!",
         "logo": "images/projects/comingSoon.jpeg",
         "link": "",
-        "shadow": "#000000",
+        "shadow": "#ffffff",
         "credits": ""
     }
 
