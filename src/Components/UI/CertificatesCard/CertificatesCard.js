@@ -1,5 +1,4 @@
 import "./CertificatesCard.scss";
-
 const CertificatesCard = (props) => {
     
     return (

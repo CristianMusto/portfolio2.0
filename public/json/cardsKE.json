@@ -92,5 +92,12 @@
     "description": "learnt in LBA",
     "logo": "images/logos/sqlLogo.jpg",
     "shadow": "#FF271B"
+  },
+  {
+    "id": 12,
+    "title": "PYTHON",
+    "description": "learnt in formatemp course",
+    "logo": "images/logos/pythonLogo.png",
+    "shadow": "#FFCD3C"
   }
 ]

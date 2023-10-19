@@ -7,20 +7,24 @@ import { useState, useEffect } from "react";
 const Knowledge = () => {
 
     const [knowledgeContent, setKnowledgeContent] = useState([]);
+    const [shadowColor, setShadowColor] = useState('#F16327');
     const [baseUrl, setBaseUrl] = useState();
     const [selectedItemId, setSelectedItemId] = useState(0);
     const [selectedItemDesc, setSelectedItemDesc] = useState();
+    document.documentElement.style.setProperty(`--shadowKE`, `${shadowColor}`);
 
     const handleActive = (el) => {
-      console.log(el)
       let selectedId = el.id;
       let selectedDesc = el.description;
+      let selectedShadow = el.shadow;
       if (selectedItemId === selectedId) {
         setSelectedItemId(null)
         setSelectedItemDesc(null)
+        setShadowColor(null)
       } else {
         setSelectedItemId(selectedId)
         setSelectedItemDesc(selectedDesc)
+        setShadowColor(selectedShadow)
       }
     }
 

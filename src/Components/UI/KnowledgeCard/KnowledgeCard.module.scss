@@ -4,6 +4,7 @@
     width: 9rem;
     transform-style: preserve-3d;
     animation: rot 2s infinite ease;
+    animation-fill-mode: backwards;
     border-radius: 100%;
     display: flex;
     justify-content: center;
