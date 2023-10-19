@@ -107,15 +107,48 @@
     "id": 13,
     "title": "KALI LINUX",
     "description": "learnt in formatemp course",
-    "logo": "images/logos/kaliLogo.png",
+    "logo": "images/logos/kaliLogo.jpg",
     "shadow": "#FFFFFF"
   },
 
   {
     "id": 14,
     "title": "SWIFT",
-    "description": "learnt in formatemp course",
-    "logo": "images/logos/swiftLogo.png",
+    "description": "self-taught",
+    "logo": "images/logos/swiftLogo.jpg",
     "shadow": "#FC4F2F"
+  },
+
+  {
+    "id": 15,
+    "title": "LARAVEL",
+    "description": "learnt in nss",
+    "logo": "images/logos/laravelLogo.jpg",
+    "shadow": "#FF2C20"
+  },
+
+  {
+    "id": 16,
+    "title": "BOOTSTRAP",
+    "description": "learnt in epicode and improved in nss and lba",
+    "logo": "images/logos/bootstrapLogo.png",
+    "shadow": "#6F3BBB"
+  },
+
+  {
+    "id": 17,
+    "title": "GSAP",
+    "description": "learnt in nss and improved as self-taught",
+    "logo": "images/logos/gsapLogo.jpg",
+    "shadow": "#88CD00"
+  },
+
+  {
+    "id": 18,
+    "title": "THREE JS",
+    "description": "learnt in nss and improved as self-taught",
+    "logo": "images/logos/threejsLogo.png",
+    "shadow": "#FFFFFF"
   }
+
 ]
