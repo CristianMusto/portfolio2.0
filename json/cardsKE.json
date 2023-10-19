@@ -48,14 +48,6 @@
   },
 
   {
-    "id": 6,
-    "title": "SMARTY",
-    "description": "learnt in nss",
-    "logo": "images/logos/smarty.png",
-    "shadow": "#F0C040"
-  },
-
-  {
     "id": 7,
     "title": "ANGULAR",
     "description": "learnt in epicode",
@@ -86,6 +78,7 @@
     "logo": "images/logos/php-logo-hd.jpg",
     "shadow": "#5F82BA"
   },
+
   {
     "id": 11,
     "title": "SQL",
@@ -93,6 +86,7 @@
     "logo": "images/logos/sqlLogo.jpg",
     "shadow": "#FF271B"
   },
+
   {
     "id": 12,
     "title": "PYTHON",
@@ -100,11 +94,12 @@
     "logo": "images/logos/pythonLogo.png",
     "shadow": "#FFCD3C"
   },
+  
   {
     "id": 13,
     "title": "KALI LINUX",
     "description": "learnt in formatemp course",
-    "logo": "images/logos/pythonLogo.png",
+    "logo": "images/logos/kaliLogo.png",
     "shadow": "#FFFFFF"
   }
 ]
