@@ -149,6 +149,30 @@
     "description": "learnt in nss and improved as self-taught",
     "logo": "images/logos/threejsLogo.png",
     "shadow": "#FFFFFF"
+  },
+
+  {
+    "id": 19,
+    "title": "RXJS",
+    "description": "learnt in udemy",
+    "logo": "images/logos/rxjsLogo.jpg",
+    "shadow": "#EB0A8E"
+  },
+
+  {
+    "id": 20,
+    "title": "POSTMAN",
+    "description": "learnt in epicode and improved in nss",
+    "logo": "images/logos/postmanLogo.png",
+    "shadow": "#FD6C35"
+  },
+
+  {
+    "id": 21,
+    "title": "EXCEL",
+    "description": "learnt in lba",
+    "logo": "images/logos/excelLogo.png",
+    "shadow": "#217346"
   }
 
 ]
