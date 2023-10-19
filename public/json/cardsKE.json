@@ -99,5 +99,12 @@
     "description": "learnt in formatemp course",
     "logo": "images/logos/pythonLogo.png",
     "shadow": "#FFCD3C"
+  },
+  {
+    "id": 13,
+    "title": "KALI LINUX",
+    "description": "learnt in formatemp course",
+    "logo": "images/logos/pythonLogo.png",
+    "shadow": "#FFFFFF"
   }
 ]
