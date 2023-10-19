@@ -30,8 +30,8 @@
         "id": 3,
         "title": "Formatemp",
         "description": "Cyber security certificate",
-        "logo": "images/efSet/englishCertificate.jpg",
-        "link": "https://cristianmusto.github.io/react-portfolio/images/efSet/englishCert.pdf",
+        "logo": "images/formatemp/formatemp.png",
+        "link": "https://cristianmusto.github.io/react-portfolio/images/formatemp/attestatoFormatemp.pdf",
         "shadow": "#450AE1"
     }
 
