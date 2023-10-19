@@ -173,6 +173,30 @@
     "description": "learnt in lba",
     "logo": "images/logos/excelLogo.png",
     "shadow": "#217346"
+  },
+
+  {
+    "id": 22,
+    "title": "TERMINAL",
+    "description": "learnt in formatemp course",
+    "logo": "images/logos/terminalLogo.jpg",
+    "shadow": "#FFFFFF"
+  },
+
+  {
+    "id": 23,
+    "title": "HELP DESK",
+    "description": "learnt in lba",
+    "logo": "images/logos/helpdeskLogo.png",
+    "shadow": "#1475B1"
+  },
+
+  {
+    "id": 24,
+    "title": "LESS",
+    "description": "learnt in lba",
+    "logo": "images/logos/lessLogo.png",
+    "shadow": "#1D355C"
   }
 
 ]
