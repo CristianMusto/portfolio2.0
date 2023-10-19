@@ -4,7 +4,7 @@
         "title": "Epicode School",
         "description": "Front-End Certificate",
         "logo": "images/epicode/attestatoEpicode.jpg",
-        "link": "https://cristianmusto.github.io/react-portfolio/images/epicode/attestatoEpicode.pdf",
+        "link": "https://cristianmusto.github.io/porfolio2.0/images/epicode/attestatoEpicode.pdf",
         "shadow": "#E63055"
     },
 
@@ -13,7 +13,7 @@
         "title": "Udemy",
         "description": "ReactJS Certificate",
         "logo": "images/udemy/reactCourse.jpg",
-        "link": "https://cristianmusto.github.io/react-portfolio/images/udemy/reactCourse.pdf",
+        "link": "https://cristianmusto.github.io/porfolio2.0/images/udemy/reactCourse.pdf",
         "shadow": "#A335EF"
     },
 
@@ -22,7 +22,7 @@
         "title": "EF SET",
         "description": "English Certificate",
         "logo": "images/efSet/englishCertificate.jpg",
-        "link": "https://cristianmusto.github.io/react-portfolio/images/efSet/englishCert.pdf",
+        "link": "https://cristianmusto.github.io/porfolio2.0/images/efSet/englishCert.pdf",
         "shadow": "#450AE1"
     },
 
@@ -31,7 +31,7 @@
         "title": "Formatemp",
         "description": "Cyber security certificate",
         "logo": "images/formatemp/formatemp.png",
-        "link": "https://cristianmusto.github.io/react-portfolio/images/formatemp/attestatoFormatemp.pdf",
+        "link": "https://cristianmusto.github.io/porfolio2.0/images/formatemp/attestatoFormatemp.pdf",
         "shadow": "#76A237"
     }
 
