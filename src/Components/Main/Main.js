@@ -2,6 +2,7 @@ import styleClass from "./Main.module.scss";
 import AboutMe from "./AboutMe/AboutMe";
 import Knowledge from "./Knowledge/Knowledge";
 import Certificates from "./Certificates/Certificates";
+import Projects from "./Projects/Projects";
 
 
 const Main = () => {
@@ -10,6 +11,7 @@ const Main = () => {
             <AboutMe />
             <Certificates />
             <Knowledge />
+            <Projects />
         </div>
     )
 }

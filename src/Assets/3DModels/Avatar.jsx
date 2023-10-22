@@ -31,4 +31,4 @@ export default function Avatar(props) {
   )
 }
 
-useGLTF.preload('/avatar.glb')
+useGLTF.preload('/animatedAvatar.glb')

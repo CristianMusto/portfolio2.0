@@ -1,0 +1,32 @@
+.cardProject {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cardProject:hover {
+    flex: 4;
+  }
+  
+  .cardProject p {
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+  }
+  
+  .cardProject:hover {
+    p{
+        transform: rotate(0);
+    }
+  }
