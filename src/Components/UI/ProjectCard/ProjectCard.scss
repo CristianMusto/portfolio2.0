@@ -9,24 +9,60 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .cardProject:hover {
-    flex: 4;
-  }
-  
-  .cardProject p {
-    min-width: 14em;
-    padding: .5em;
-    text-align: center;
-    transform: rotate(-90deg);
-    transition: all .5s;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-  }
-  
-  .cardProject:hover {
-    p{
-        transform: rotate(0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3, p{
+      padding: .5em;
+      text-align: center;
+      transition: all .5s linear;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: white;
+      opacity: 0;
+      text-decoration: none;
+      margin: 0 auto
+    }
+
+    a {
+      font-weight: 600;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #ffffff;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000000;
+      opacity: 0;
+      text-decoration: none;
+    }
+
+    span {
+      color: #ffffff;
+      padding: 0px 0px 20px 0px;
+      opacity: 0;
+    }
+
+    &:hover {
+      flex: 4;
+      background-color: rgba($color: #000000, $alpha: 0.7);
+      backdrop-filter: blur(20px);
+      background-blend-mode: multiply;
+      h3, a, p, span{
+        opacity: 1;
+        transition: all .5s linear;
+      }
+
+      p{
+        padding: 20px;
+      }
     }
   }
+  
+  
+  

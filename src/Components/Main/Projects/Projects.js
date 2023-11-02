@@ -23,7 +23,7 @@ const Projects = () => {
             <div className={styleClass.ProjectsContent}>
             {ProjectContent.length > 0 ? (
               ProjectContent.map((el) => (
-                <ProjectCard key={el.id} src={`${el.link}`} id={el.id} title={el.title} desc={el.description} 
+                <ProjectCard key={el.id} src={`${el.link}`} id={el.id} title={el.title} description={el.description} credits={el.credits} 
                 shadow={el.shadow} image={`${baseUrl}${el.logo}`}/>
               ))
               ) : (

@@ -52,5 +52,14 @@
       "link": "https://www.nssmag.com/it/archive-stories",
       "shadow": "#FFFFFF",
       "credits": "credits: Nss magazine, Brownie"
+    },
+    {
+      "id": 6,
+      "title": "Gucci: when time stand still",
+      "description": "created with the use of: html, sass, jquery, gsap and company's cms. I learnt a lot of animation and best practise.",
+      "logo": "images/projects/gucci.jpeg",
+      "link": "https://www.nssmag.com/it/gucci",
+      "shadow": "#76AEBF",
+      "credits": "credits: Nss magazine, Brownie"
     }
   ]
