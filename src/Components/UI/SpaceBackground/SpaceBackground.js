@@ -1,5 +1,6 @@
+import { memo } from "react";
 import "./SpaceBackground.scss";
-const SpaceBackground = () => {
+const SpaceBackground = memo(() => {
     return (
         <div className="spaceBackground">
             <div className="stars"></div>
@@ -7,6 +8,6 @@ const SpaceBackground = () => {
             <div className="clouds"></div>
         </div>
     )
-}
+})
 
 export default SpaceBackground

@@ -1,11 +1,12 @@
 import styleClass from "./Projects.module.scss";
 import { Element } from 'react-scroll';
 import ProjectCard from "../../UI/ProjectCard/ProjectCard";
-import { useState, useEffect } from "react";
+import { useState, useMemo } from "react";
+
 const Projects = () => {
     const [ProjectContent, setProjectContent] = useState([]);
     const [baseUrl, setBaseUrl] = useState();
-    useEffect(() => {
+    useMemo(() => {
         setBaseUrl("https://cristianmusto.github.io/portfolio2.0/")
         const knowledgeFetch = async () => {
         const data = await (
@@ -32,6 +33,6 @@ const Projects = () => {
             </div>
         </Element>
     )
-} 
+}
 
 export default Projects

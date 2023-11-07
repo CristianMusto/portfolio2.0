@@ -1,7 +1,8 @@
+import { memo } from "react";
 import styleClass from "./Loader.module.scss";
 import { useState, useEffect } from "react";
 
-const Loader = () => {
+const Loader = memo(() => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
@@ -29,6 +30,6 @@ const Loader = () => {
             </div>
         </div>
     )
-}
+})
 
 export default Loader

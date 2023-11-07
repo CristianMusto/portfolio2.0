@@ -8,7 +8,7 @@ export default function Avatar(props) {
   const { actions } = useAnimations(animations, group);
   useEffect(() => {
       actions['Armature.001|mixamo.com|Layer0'].play(); 
-   });
+   }, [actions]);
 
   return (
     <group ref={group} {...props} dispose={null}>

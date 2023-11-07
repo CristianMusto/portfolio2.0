@@ -1,8 +1,11 @@
+import { memo } from "react";
 import "./CertificatesCard.scss";
-const CertificatesCard = (props) => {
-    
+import LazyLoad from "react-lazyload";
+
+const CertificatesCard = memo((props) => {
+    const style = {backgroundImage: `url("${props.image}")`,  boxShadow: `0 0 20px 10px ${props.shadow}`}
     return (
-        <div className={`${props.className} cardCertificate`} id={props.id} style={{backgroundImage: `url("${props.image}")`,  boxShadow: `0 0 20px 10px ${props.shadow}`}}>
+        <LazyLoad once className={`${props.className} cardCertificate`} id={props.id} style={style}>
             <p className="heading">{props.title !== 'Coming Soon' ? props.title : ''}</p>
             <p className="para">{props.desc}
             </p>
@@ -12,8 +15,8 @@ const CertificatesCard = (props) => {
                 <a className="card-btn" href={props.src !== "" ? `${props.src}` : "undefined"} target="_blank" rel="noreferrer">Certificate</a>
             </div>
             : ''}
-        </div>
+        </LazyLoad>
     )
-}
+})
 
 export default CertificatesCard

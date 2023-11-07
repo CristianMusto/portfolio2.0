@@ -1,6 +1,7 @@
+import { memo } from "react";
 import "./Stars.scss";
 
-const Stars = () => {
+const Stars = memo(() => {
     return (
         <div className="starsContainer">
             <p id="stars"></p>
@@ -8,6 +9,6 @@ const Stars = () => {
             <p id="stars3"></p>
         </div>
     )
-}
+})
 
 export default Stars

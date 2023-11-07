@@ -1,7 +1,7 @@
 import styleClass from "./Knowledge.module.scss";
 import { Element } from 'react-scroll';
 import KnowledgeCard from "../../UI/KnowledgeCard/KnowledgeCard";
-import { useState, useEffect } from "react";
+import { useState, useMemo } from "react";
 
 
 const Knowledge = () => {
@@ -28,7 +28,7 @@ const Knowledge = () => {
       }
     }
 
-    useEffect(() => {
+    useMemo(() => {
         setBaseUrl("https://cristianmusto.github.io/portfolio2.0/")
         const knowledgeFetch = async () => {
         const data = await (
@@ -62,6 +62,6 @@ const Knowledge = () => {
             
         </Element>
     )
-} 
+}
 
 export default Knowledge

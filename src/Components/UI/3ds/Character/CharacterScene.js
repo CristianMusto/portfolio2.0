@@ -3,8 +3,9 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import Avatar from '../../../../Assets/3DModels/Avatar';
 import './Character.scss'
+import { memo } from 'react';
 
-export default function CharacterScene() {
+const CharacterScene = memo(() => {
    return (
       <Canvas
          camera={{ position: [0, 0, 12.25], fov: 15 }}
@@ -20,4 +21,6 @@ export default function CharacterScene() {
          <OrbitControls enableZoom={false} enableRotate={false}/>
       </Canvas>
    );
-}
+})
+
+export default CharacterScene
