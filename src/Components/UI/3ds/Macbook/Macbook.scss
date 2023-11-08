@@ -1,0 +1,14 @@
+.macbook {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    div {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        width: 100% !important;
+        height: 100vh !important;
+    }
+}

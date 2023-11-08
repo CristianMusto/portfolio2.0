@@ -5,17 +5,19 @@ import './App.scss';
 import Loader from './Components/UI/Loader/Loader';
 import Main from './Components/Main/Main';
 import SpaceBackground from './Components/UI/SpaceBackground/SpaceBackground';
+import Macbook from './Components/UI/3ds/Macbook/Macbook';
 
 
 function App() {
 
   return (
     <div className="App">
+        <Macbook/>
         <Header />
         <Planet />
         <Main />
         <Cursor />
-        {/* <Loader /> */}
+        <Loader />
         <SpaceBackground/>
     </div>
   );

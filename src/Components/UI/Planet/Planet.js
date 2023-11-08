@@ -19,9 +19,11 @@ const Planet = memo(() => {
     }, [])
     return (
         <Element className="background" name="Cover">
-            <Title />
-            <motion.div id="canvas" initial="hidden" variants={variants} whileInView="visible"/>
-            <Stars></Stars>
+            <motion.div initial>
+                <Title />
+                <motion.div id="canvas" initial="hidden" variants={variants} whileInView="visible"/>
+                <Stars></Stars>
+            </motion.div>
         </Element>
     )
 })
