@@ -96,7 +96,7 @@ const AboutCard = memo(() => {
                     <button data-section="#experience" className={`${expBtnActive ? 'is-active' : ''}`} onClick={handleButtonClick}>JOURNEY</button>
                 </div>
             </div>
-            </div>
+        </div>
     )
 })
 

@@ -15,7 +15,7 @@ function App() {
         <Planet />
         <Main />
         <Cursor />
-        <Loader />
+        {/* <Loader /> */}
         <SpaceBackground/>
     </div>
   );
