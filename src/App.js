@@ -12,12 +12,12 @@ function App() {
 
   return (
     <div className="App">
-        <Macbook/>
+        <Macbook className="mac"/>
         <Header />
         <Planet />
         <Main />
         <Cursor />
-        <Loader />
+        <Loader /> 
         <SpaceBackground/>
     </div>
   );
