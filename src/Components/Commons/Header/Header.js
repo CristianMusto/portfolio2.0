@@ -87,7 +87,7 @@ const Header = props => {
                     <li className={`${styleClass.menuItem} menuItem`}>
                         <Link
                         to="Knowledge"
-                        offset={-100}
+                        offset={0}
                         activeClass={styleClass.active}
                         duration={1000}
                         spy={true}
