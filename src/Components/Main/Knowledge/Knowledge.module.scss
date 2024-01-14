@@ -5,7 +5,7 @@
     position: relative;
     top: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 40px;
     min-height: 100vh;
@@ -20,7 +20,7 @@
     }
 
     .knowledgeContentText {
-        flex: 0 0 50%;
+        flex: 0 0 35%;
         height: 100%;
         text-align: center;
         color: white;

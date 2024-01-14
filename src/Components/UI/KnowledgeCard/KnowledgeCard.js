@@ -9,7 +9,7 @@ const KnowledgeCard = (props) => {
     }, [])
     return (
         <div className={`${styleClass.oneDiv} ${props.className}`} style={style} onClick={props.onClick} id={props.id}>
-            <img src={props.src} alt="profile" className={styleClass.image}/>
+            <img src={props.src} alt="profile" className={styleClass.image} loading="eager"/>
         </div>
     )
 }

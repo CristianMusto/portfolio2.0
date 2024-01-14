@@ -9,7 +9,8 @@ export function PlanetInit () {
     } else {
         return
     }
-    window.onload = function() {
+    if (document.getElementsByClassName('App') && document.getElementById('vertexShader').textContent 
+        && document.getElementById('fragmentShader').textContent) {
         init();
         animate();
     }
@@ -17,7 +18,7 @@ export function PlanetInit () {
     function init() {
         renderer = new THREE.WebGLRenderer({
             antialias: true,
-            alpha: true
+            alpha: true,
         });
         renderer.setPixelRatio((window.devicePixelRatio) ? window.devicePixelRatio : 1);
         renderer.setSize(window.innerWidth, window.innerHeight);
@@ -25,6 +26,8 @@ export function PlanetInit () {
         renderer.setClearColor('#232323', 0.0);
         if (document.getElementById('canvas')) {
             document.getElementById('canvas').appendChild(renderer.domElement);
+        } else {
+            console.error('Non esiste il canvas')
         }
         scene = new THREE.Scene();
 
@@ -119,5 +122,4 @@ export function PlanetInit () {
         renderer.clear();
         renderer.render(scene, camera)
     };
-
 }

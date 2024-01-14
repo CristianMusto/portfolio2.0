@@ -1,7 +1,7 @@
 import styleClass from "./Knowledge.module.scss";
 import { Element } from 'react-scroll';
 import KnowledgeCard from "../../UI/KnowledgeCard/KnowledgeCard";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 
 
 const Knowledge = () => {
@@ -42,6 +42,10 @@ const Knowledge = () => {
         };
         knowledgeFetch();
     }, []);
+
+    useEffect(() => {
+
+    }, [])
 
     return (
         <Element className={styleClass.knowledgeContainer} id="Knowledge">

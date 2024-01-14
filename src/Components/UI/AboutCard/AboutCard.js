@@ -2,7 +2,6 @@ import "./AboutCard.scss";
 import profilePic from "../../../Assets/Images/profile.jpg";
 import aboutBack from "../../../Assets/Images/aboutBack.jpg"
 import { useRef, useState } from "react";
-import LazyLoad from "react-lazyload";
 import { memo } from "react";
 
 const AboutCard = memo(() => {
@@ -37,9 +36,7 @@ const AboutCard = memo(() => {
         <div className="card" ref={card} data-state="#about">
             <div className="card-header">
                 <div className="card-cover" style={{backgroundImage: `url(${aboutBack})`}}></div>
-                <LazyLoad once>
-                    <img className="card-avatar" src={`${profilePic}`} alt="avatar" />
-                </LazyLoad>
+                    <img className="card-avatar" src={`${profilePic}`} alt="avatar" loading="eager"/>
                 <h2 className="card-jobtitle">Design is ART, Design is LIFE</h2>
             </div>
             <div className="card-main">

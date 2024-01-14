@@ -5,9 +5,15 @@ import './App.scss';
 import Loader from './Components/UI/Loader/Loader';
 import Main from './Components/Main/Main';
 import SpaceBackground from './Components/UI/SpaceBackground/SpaceBackground';
+import { useEffect } from 'react';
+import { PlanetInit } from "./Assets/Js/PlanetInit";
 
 
 function App() {
+
+  useEffect(() => {
+    PlanetInit();
+  }, [])  
 
   return (
     <div className="App">
