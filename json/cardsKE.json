@@ -181,6 +181,30 @@
     "description": "learnt in lba",
     "logo": "images/logos/helpdeskLogo.png",
     "shadow": "#1475B1"
+  },
+
+  {
+    "id": 23,
+    "title": "SWIFT UI",
+    "description": "learnt in udemy",
+    "logo": "images/logos/helpdeskLogo.png",
+    "shadow": "#FC4F2F"
+  },
+
+  {
+    "id": 24,
+    "title": "TEST",
+    "description": "learnt in udemy",
+    "logo": "images/logos/helpdeskLogo.png",
+    "shadow": "#FC4F2F"
+  },
+
+  {
+    "id": 25,
+    "title": "TEST",
+    "description": "learnt in udemy",
+    "logo": "images/logos/helpdeskLogo.png",
+    "shadow": "#FC4F2F"
   }
 
 ]
