@@ -43,10 +43,6 @@ const Knowledge = () => {
         knowledgeFetch();
     }, []);
 
-    useEffect(() => {
-
-    }, [])
-
     return (
         <Element className={styleClass.knowledgeContainer} id="Knowledge">
             <div className={styleClass.knowledgeContent}>
@@ -58,10 +54,6 @@ const Knowledge = () => {
               ) : (
                 <h3>Coming Soon...</h3>
             )}
-            </div>
-
-            <div className={styleClass.knowledgeContentText}>
-              {selectedItemDesc !== null ? <p>{selectedItemDesc}</p> : <p>Others coming soon...</p>}
             </div>
             
         </Element>

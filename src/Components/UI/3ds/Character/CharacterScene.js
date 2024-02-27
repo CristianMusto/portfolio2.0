@@ -9,7 +9,6 @@ const CharacterScene = memo(() => {
    return (
       <Canvas
          camera={{ position: [0, 0, 12.25], fov: 15 }}
-         
          id='character'
       >
          <ambientLight intensity={1.25} />

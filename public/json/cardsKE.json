@@ -25,6 +25,38 @@
 
   {
     "id": 3,
+    "title": "LESS",
+    "description": "learnt in lba",
+    "logo": "images/logos/lessLogo.png",
+    "shadow": "#1D355C"
+  },
+
+  {
+    "id": 4,
+    "title": "BOOTSTRAP",
+    "description": "learnt in epicode and improved in nss and lba",
+    "logo": "images/logos/bootstrapLogo.png",
+    "shadow": "#6F3BBB"
+  },
+
+  {
+    "id": 5,
+    "title": "GSAP",
+    "description": "learnt in nss and improved as self-taught",
+    "logo": "images/logos/gsapLogo.jpg",
+    "shadow": "#88CD00"
+  },
+
+  {
+    "id": 6,
+    "title": "THREE JS",
+    "description": "learnt in nss and improved as self-taught",
+    "logo": "images/logos/threejsLogo.png",
+    "shadow": "#FFFFFF"
+  },
+
+  {
+    "id": 7,
     "title": "JAVASCRIPT",
     "description": "self-taught, improved in epicode and nss",
     "logo": "images/logos/javascript-logo.png",
@@ -32,7 +64,7 @@
   },
 
   {
-    "id": 4,
+    "id": 8,
     "title": "JQUERY",
     "description": "learnt in epicode and improved in nss",
     "logo": "images/logos/jquery-logo.jpg",
@@ -40,7 +72,7 @@
   },
 
   {
-    "id": 5,
+    "id": 9,
     "title": "GIT",
     "description": "learnt in epicode and improved in nss",
     "logo": "images/logos/git.png",
@@ -48,15 +80,7 @@
   },
 
   {
-    "id": 6,
-    "title": "SMARTY",
-    "description": "learnt in nss",
-    "logo": "images/logos/smarty.png",
-    "shadow": "#F0C040"
-  },
-
-  {
-    "id": 7,
+    "id": 10,
     "title": "ANGULAR",
     "description": "learnt in epicode",
     "logo": "images/logos/angular-logo.jpg",
@@ -64,7 +88,7 @@
   },
 
   {
-    "id": 8,
+    "id": 11,
     "title": "REACT JS",
     "description": "self-taught, udemy course",
     "logo": "images/logos/react-logo.png",
@@ -72,7 +96,7 @@
   },
 
   {
-    "id": 9,
+    "id": 12,
     "title": "VUE JS",
     "description": "learnt in nss",
     "logo": "images/logos/vue.png",
@@ -80,43 +104,19 @@
   },
 
   {
-    "id": 10,
-    "title": "PHP",
-    "description": "learnt in nss",
-    "logo": "images/logos/php-logo-hd.jpg",
-    "shadow": "#5F82BA"
-  },
-
-  {
-    "id": 11,
-    "title": "SQL",
-    "description": "learnt in LBA",
-    "logo": "images/logos/sqlLogo.jpg",
-    "shadow": "#FF271B"
-  },
-
-  {
-    "id": 12,
-    "title": "PYTHON",
-    "description": "learnt in formatemp course",
-    "logo": "images/logos/pythonLogo.png",
-    "shadow": "#FFCD3C"
-  },
-
-  {
     "id": 13,
-    "title": "KALI LINUX",
-    "description": "learnt in formatemp course",
-    "logo": "images/logos/kaliLogo.jpg",
-    "shadow": "#FFFFFF"
+    "title": "RXJS",
+    "description": "learnt in udemy",
+    "logo": "images/logos/rxjsLogo.jpg",
+    "shadow": "#EB0A8E"
   },
 
   {
     "id": 14,
-    "title": "SWIFT",
-    "description": "self-taught",
-    "logo": "images/logos/swiftLogo.jpg",
-    "shadow": "#FC4F2F"
+    "title": "PHP",
+    "description": "learnt in nss",
+    "logo": "images/logos/php-logo-hd.jpg",
+    "shadow": "#5F82BA"
   },
 
   {
@@ -129,34 +129,34 @@
 
   {
     "id": 16,
-    "title": "BOOTSTRAP",
-    "description": "learnt in epicode and improved in nss and lba",
-    "logo": "images/logos/bootstrapLogo.png",
-    "shadow": "#6F3BBB"
+    "title": "SQL",
+    "description": "learnt in LBA",
+    "logo": "images/logos/sqlLogo.jpg",
+    "shadow": "#FF271B"
   },
 
   {
     "id": 17,
-    "title": "GSAP",
-    "description": "learnt in nss and improved as self-taught",
-    "logo": "images/logos/gsapLogo.jpg",
-    "shadow": "#88CD00"
+    "title": "PYTHON",
+    "description": "learnt in formatemp course",
+    "logo": "images/logos/pythonLogo.png",
+    "shadow": "#FFCD3C"
   },
 
   {
     "id": 18,
-    "title": "THREE JS",
-    "description": "learnt in nss and improved as self-taught",
-    "logo": "images/logos/threejsLogo.png",
+    "title": "KALI LINUX",
+    "description": "learnt in formatemp course",
+    "logo": "images/logos/kaliLogo.jpg",
     "shadow": "#FFFFFF"
   },
 
   {
     "id": 19,
-    "title": "RXJS",
-    "description": "learnt in udemy",
-    "logo": "images/logos/rxjsLogo.jpg",
-    "shadow": "#EB0A8E"
+    "title": "SWIFT",
+    "description": "self-taught",
+    "logo": "images/logos/swiftLogo.jpg",
+    "shadow": "#FC4F2F"
   },
 
   {
@@ -177,14 +177,6 @@
 
   {
     "id": 22,
-    "title": "TERMINAL",
-    "description": "learnt in formatemp course",
-    "logo": "images/logos/terminalLogo.jpg",
-    "shadow": "#FFFFFF"
-  },
-
-  {
-    "id": 23,
     "title": "HELP DESK",
     "description": "learnt in lba",
     "logo": "images/logos/helpdeskLogo.png",
@@ -192,11 +184,27 @@
   },
 
   {
+    "id": 23,
+    "title": "SWIFT UI",
+    "description": "learnt in udemy",
+    "logo": "images/logos/helpdeskLogo.png",
+    "shadow": "#FC4F2F"
+  },
+
+  {
     "id": 24,
-    "title": "LESS",
-    "description": "learnt in lba",
-    "logo": "images/logos/lessLogo.png",
-    "shadow": "#1D355C"
+    "title": "TEST",
+    "description": "learnt in udemy",
+    "logo": "images/logos/helpdeskLogo.png",
+    "shadow": "#FC4F2F"
+  },
+
+  {
+    "id": 25,
+    "title": "TEST",
+    "description": "learnt in udemy",
+    "logo": "images/logos/helpdeskLogo.png",
+    "shadow": "#FC4F2F"
   }
 
 ]
