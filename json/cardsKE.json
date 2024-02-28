@@ -35,7 +35,7 @@
     "id": 4,
     "title": "BOOTSTRAP",
     "description": "learnt in epicode and improved in nss and lba",
-    "logo": "images/logos/bootstrapLogo.png",
+    "logo": "images/logos/bootstrap.jpeg",
     "shadow": "#6F3BBB"
   },
 
@@ -75,7 +75,7 @@
     "id": 9,
     "title": "GIT",
     "description": "learnt in epicode and improved in nss",
-    "logo": "images/logos/git.png",
+    "logo": "images/logos/git.jpeg",
     "shadow": "#FFFFFF"
   },
 
@@ -147,7 +147,7 @@
     "id": 18,
     "title": "KALI LINUX",
     "description": "learnt in formatemp course",
-    "logo": "images/logos/kaliLogo.jpg",
+    "logo": "images/logos/kali.jpeg",
     "shadow": "#FFFFFF"
   },
 
@@ -163,7 +163,7 @@
     "id": 20,
     "title": "POSTMAN",
     "description": "learnt in epicode and improved in nss",
-    "logo": "images/logos/postmanLogo.png",
+    "logo": "images/logos/postman.jpeg",
     "shadow": "#FD6C35"
   },
 
@@ -179,7 +179,7 @@
     "id": 22,
     "title": "HELP DESK",
     "description": "learnt in lba",
-    "logo": "images/logos/helpdeskLogo.png",
+    "logo": "images/logos/help-desk.jpeg",
     "shadow": "#1475B1"
   },
 
