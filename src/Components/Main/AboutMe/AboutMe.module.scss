@@ -1,0 +1,35 @@
+.aboutContainer {
+    color: white;
+    padding: 40px 40px 0 40px;
+    position: relative; 
+    top: 0;
+    height: 100%;
+    min-height: 75vh;
+
+
+    .aboutContent {
+        padding-top: 11rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 80%;
+        margin: auto;
+        .aboutText {
+            padding: 40px;
+
+            h2 {
+                text-align: left;
+                margin: 10px 0;
+
+                @media (max-width: 768px) {
+                    text-align: center;
+                }
+            }
+
+            p {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}

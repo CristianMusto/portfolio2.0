@@ -1,0 +1,20 @@
+html,
+body,
+#root {
+    cursor: none;
+    margin:0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #000000;
+    font-family: verdana;
+}
+
+html *,
+body * {
+    cursor: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }

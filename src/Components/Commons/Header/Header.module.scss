@@ -1,0 +1,67 @@
+.header {
+    width: 100vw;
+    height: 7.5vh;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background: rgba($color: #000000, $alpha: 0.05);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+
+    .headerMenu {
+        width: 100%;
+        height: 100%;
+        .listMenu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            a {
+                color: #ffffff;
+                padding: 1rem 0;
+                pointer-events: auto;
+                width: 100%;
+                height: 100%;
+                display: block;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                h3 {
+                    margin: 0;
+                }
+
+                &.active h3 {
+                    animation: neonAnim 2s alternate-reverse infinite;
+                    color: #F5F8FB;
+
+                    @keyframes neonAnim {
+                        from {
+                            text-shadow:
+                              0 0 25px rgba(245, 248, 251, .7),
+                              0 0 50px rgba(245, 248, 251, .7),
+                              0 0 110px rgba(245, 248, 251, .7);
+                          }
+                          to {
+                            text-shadow:
+                              0 0 15px rgba(245, 248, 251, .7),
+                              0 0 30px rgba(245, 248, 251, .7),
+                              0 0 70px rgba(245, 248, 251, .7);
+                          }
+                    }
+                }
+            }
+
+            @media (max-width: 800px) {
+                margin-top: 20px;
+            }
+
+            .menuItem {
+                pointer-events: all;
+                color: #ffffff
+            }
+        }
+    }
+}

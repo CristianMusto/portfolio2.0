@@ -1,0 +1,20 @@
+.ProjectsContainer {
+    position: relative;
+    top: 0;
+    padding: 40px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    
+    .ProjectsContent {
+        display: flex;
+        gap: 20px;
+        padding: .4em;
+        justify-content: center;
+        align-items: center;
+        max-width: 80%;
+    }
+
+}
