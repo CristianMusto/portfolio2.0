@@ -193,10 +193,10 @@
 
   {
     "id": 24,
-    "title": "TEST",
+    "title": "TERMINAL",
     "description": "learnt in udemy",
-    "logo": "images/logos/helpdeskLogo.png",
-    "shadow": "#FC4F2F"
+    "logo": "images/logos/terminal.jpeg",
+    "shadow": "#FFFFFF"
   },
 
   {
