@@ -201,10 +201,10 @@
 
   {
     "id": 25,
-    "title": "TEST",
+    "title": "SWIFT UI",
     "description": "learnt in udemy",
-    "logo": "images/logos/helpdeskLogo.png",
-    "shadow": "#FC4F2F"
+    "logo": "images/logos/swiftUI.jpeg",
+    "shadow": "#2371D0"
   }
 
 ]
