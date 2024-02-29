@@ -61,5 +61,14 @@
       "link": "https://www.nssmag.com/it/gucci",
       "shadow": "#76AEBF",
       "credits": "credits: Nss magazine, Brownie"
+    },
+    {
+      "id": 7,
+      "title": "Retail app",
+      "description": "worked on the new retail app in LBA Consulting",
+      "logo": "images/projects/eidosRetail.png",
+      "link": "https://lnx.lbaconsulting.eu/",
+      "shadow": "#1475B1",
+      "credits": "credits: LBA Consulting"
     }
   ]
